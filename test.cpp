@@ -35,7 +35,6 @@ void calculate_delta(int num_models, int* model_index) {
 		}
 		for (int i = 0; i < hmms[n].state_num; i++) {
 			double tmp = delta[strlen(seq) - 1][i];
-			printf("tmp %e ", tmp);
 			if (tmp > prob[n]) prob[n] = tmp;
 		}
 	}
