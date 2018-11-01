@@ -45,7 +45,7 @@ void calculate_delta(int num_models, int* model_index) {
 
 int main(int argc, char *argv[]) {
 	if (argc != 4) {
-		cout << "Input arguments should be:\n ./test [modellist] [init_model] [testing data] [output filename]" << endl;
+		cout << "Input arguments should be:\n ./test [modellist] [testing data] [output filename]" << endl;
     	exit(1);
 	}
 	FILE* fin = fopen(argv[2], "r");
